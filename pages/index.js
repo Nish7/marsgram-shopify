@@ -7,7 +7,7 @@ export default function Home({ date }) {
 
 	return (
 		<Box bg={bg}>
-			<Flex w="70%" minH="100vh" mx="auto">
+			<Flex w="70%" minH="90vh" mx="auto">
 				<Feed date={date} />
 				<Sidebar />
 			</Flex>

@@ -58,7 +58,7 @@ function Card({ image, liked, toggleLike }) {
 	const [width, setWidth] = useState();
 	const borderColor = useColorModeValue('#dbdbdb', 'rgba(255,255,255,0.1)');
 
-	if (width < 900) {
+	if (width < 500) {
 		return null;
 	}
 
@@ -77,6 +77,8 @@ function Card({ image, liked, toggleLike }) {
 			<Image
 				alt=""
 				src={img}
+				objectFit="cover"
+				w="full"
 				ref={imgElement}
 				onLoad={() => setWidth(imgElement.current.naturalWidth)}
 			/>
