@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { shuffle } from 'lodash';
 
 export default async function handler(req, res) {
 	try {
